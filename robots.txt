@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://paragpatelcyber.com/sitemap.xml
-
-# Block private or sensitive paths if any
-Disallow: /cdn-cgi/
