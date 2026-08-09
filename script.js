@@ -202,7 +202,7 @@ async function loadGH() {
   }
 
   function renderFallback() {
-    loader.innerHTML = '<span style="color:var(--t2);font-family:var(--mono);font-size:12px">// See github.com/EnlightenedSoul666</span>';
+    loader.innerHTML = '<span style="color:var(--t2);font-family:var(--mono);font-size:12px">// See github.com/Skytheguy-tech</span>';
   }
 
   try {
@@ -235,7 +235,7 @@ async function loadGH() {
   }
 
   try {
-    const repos = await fetchWithRetry('https://api.github.com/users/EnlightenedSoul666/repos?sort=updated&per_page=12');
+    const repos = await fetchWithRetry('https://api.github.com/users/Skytheguy-tech/repos?sort=updated&per_page=12');
     const filtered = repos.filter(r => !r.fork).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).slice(0, 6);
     if (!filtered.length) throw 0;
     loader.style.display = 'none';
