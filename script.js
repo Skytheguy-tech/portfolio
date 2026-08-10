@@ -260,7 +260,6 @@ const CMDS = {
     { c: 'info', t: '  about     → Detailed background' },
     { c: 'info', t: '  skills    → Technical capabilities' },
     { c: 'info', t: '  projects  → Security projects' },
-    { c: 'info', t: '  scan      → Run system scan' },
     { c: 'info', t: '  social    → Contact & social links' },
     { c: 'info', t: '  contact   → Get in touch' },
     { c: 'info', t: '  clear     → Clear terminal' },
