@@ -194,8 +194,6 @@ async function loadGH() {
         <span style="display:flex;align-items:center;gap:4px">
           <span style="width:10px;height:10px;border-radius:50%;background:${dot};display:inline-block;box-shadow:0 0 4px ${dot}88;flex-shrink:0"></span>${lang || 'N/A'}
         </span>
-        <span title="Stars">⭐ ${stars}</span>
-        <span title="Forks">🍴 ${forks}</span>
         ${updatedStr ? `<span style="margin-left:auto;font-size:9px;opacity:.55">${updatedStr}</span>` : ''}
       </div>`;
     return a;
