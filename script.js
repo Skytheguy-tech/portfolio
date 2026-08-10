@@ -391,9 +391,9 @@ function showToast(msg = '✓ Copied!') {
   }));
 }
 function copyEmail() {
-  navigator.clipboard.writeText('ShivKylash d1020@gmail.com')
+  navigator.clipboard.writeText('vshivkylash06@gmail.com')
     .then(() => showToast('✓ Email copied to clipboard!'))
-    .catch(() => showToast('ShivKylash d1020@gmail.com'));
+    .catch(() => showToast('vshivkylash06@gmail.com'));
 }
 window.showToast = showToast;
 window.copyEmail = copyEmail;
