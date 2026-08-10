@@ -282,10 +282,10 @@ const CMDS = {
   ],
   skills: () => [
     { c: 'res', t: '[ TECHNICAL SKILLS ]' },
-    { c: 'info', t: 'Languages : Python  SQL  C/C++  Java  Bash' },
+    { c: 'info', t: 'Languages : Python C SQL Bash' },
     { c: 'info', t: 'Security  : SIEM (Splunk) · IDS/IPS · MITRE ATT&CK' },
     { c: 'info', t: 'Tools     : Wireshark · Metasploit · Burp Suite · Nmap' },
-    { c: 'res', t: '✦ CompTIA Security+ · Google Cybersecurity Professional' },
+    { c: 'res', t: ' CompTIA Security+ · Google Cybersecurity Professional' },
   ],
   projects: () => [
     { c: 'res', t: '[ SECURITY PROJECTS ]' },
