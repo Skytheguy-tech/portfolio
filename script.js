@@ -253,7 +253,7 @@ loadGH();
 /* ── TERMINAL ── */
 const CMDS = {
   help: () => [
-    { c: 'res', t: '┌─ SHIVCYBER TERMINAL v3.0 ──────────────────┐' },
+    { c: 'res', t: '┌─ SKYCYBER TERMINAL v3.0 ──────────────────┐' },
     { c: 'info', t: '  whoami    → Display analyst profile' },
     { c: 'info', t: '  about     → Detailed background' },
     { c: 'info', t: '  skills    → Technical capabilities' },
