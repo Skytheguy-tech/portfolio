@@ -327,55 +327,6 @@ function runCmd(cmd) {
 tIn.addEventListener('keydown', e => { if (e.key === 'Enter') { runCmd(tIn.value); tIn.value = ''; } });
 window.runCmd = runCmd;
 
-/* ── CONTACT FORM ── */
-async function submitForm(e) {
-  e.preventDefault();
-  const name = $('cf-name').value.trim();
-  const email = $('cf-email').value.trim();
-  const msg = $('cf-msg').value.trim();
-  const fs = $('fs');
-  if (!name || !email || !msg) {
-    fs.style.display = 'block';
-    fs.className = 'err';
-    fs.textContent = '✗ Please fill in all required fields.';
-    return;
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    fs.style.display = 'block';
-    fs.className = 'err';
-    fs.textContent = '✗ Please enter a valid email address.';
-    return;
-  }
-  fs.style.display = 'block';
-  fs.className = '';
-  fs.textContent = '⟳ Sending...';
-  try {
-    const response = await fetch("https://formspree.io/f/xkokogqy", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        message: msg
-      })
-    });
-    if (response.ok) {
-      fs.className = 'ok';
-      fs.textContent = '✓ Message sent successfully!';
-      $('cform').reset();
-    } else {
-      fs.className = 'err';
-      fs.textContent = '✗ Error sending message!';
-    }
-  } catch (error) {
-    fs.className = 'err';
-    fs.textContent = '✗ Network error!';
-  }
-}
-window.submitForm = submitForm;
 /* ── TOAST (spring animation via CSS) ── */
 const toastEl = $('toast');
 let toastTimer = null;
