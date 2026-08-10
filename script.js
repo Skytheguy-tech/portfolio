@@ -255,24 +255,66 @@ loadGH();
 /* ── TERMINAL ── */
 const CMDS = {
   help: () => [
-    { c: 'res', t: '┌─ ShivKylashCYBER TERMINAL v3.0 ─────────────────┐' },
+    { c: 'res', t: '┌─ SHIVCYBER TERMINAL v3.0 ──────────────────┐' },
     { c: 'info', t: '  whoami    → Display analyst profile' },
     { c: 'info', t: '  about     → Detailed background' },
     { c: 'info', t: '  skills    → Technical capabilities' },
-    { c: 'info', t: '  projects  → Real security tools' },
+    { c: 'info', t: '  projects  → Security projects' },
     { c: 'info', t: '  scan      → Run system scan' },
     { c: 'info', t: '  social    → Contact & social links' },
     { c: 'info', t: '  contact   → Get in touch' },
     { c: 'info', t: '  clear     → Clear terminal' },
     { c: 'res', t: '└─────────────────────────────────────────────┘' },
   ],
-  whoami: () => [{ c: 'res', t: 'ShivKylash@ShivKylashcyber:~$ whoami' }, { c: 'info', t: 'Name     : ShivKylash  ' }, { c: 'info', t: 'Role     : Cybersecurity Enthusiast' }, { c: 'info', t: 'Target   : Future SOC Analyst' }, { c: 'info', t: 'Degree   : Integrated M.Sc. Cyber Security' }, { c: 'info', t: 'Period   : 2024 – 2029  ·  India 🇮🇳' }, { c: 'res', t: 'Status   : 🟢 Active · Building & Learning' }],
-  about: () => [{ c: 'res', t: '[ ShivKylash   — CYBER PROFILE ]' }, { c: 'info', t: 'Name:     ShivKylash ' }, { c: 'info', t: 'Degree:   Integrated M.Sc. Cyber Security (2024–2029)' }, { c: 'info', t: 'Email:    ShivKylash d1020@gmail.com' }, { c: 'info', t: 'GitHub:   github.com/ShivKylash1020' }, { c: 'info', t: 'LinkedIn: linkedin.com/in/ShivKylash- -9593742a7' }, { c: 'res', t: 'Focus:    SOC Analysis · SIEM · Digital Forensics' }],
-  skills: () => [{ c: 'res', t: '[ TECHNICAL SKILLS ]' }, { c: 'info', t: 'Languages : Python  Java  JavaScript  C' }, { c: 'info', t: 'Security  : SOC Analysis · SIEM · Threat Detection' }, { c: 'info', t: 'Tools     : Wireshark · Wazuh · Nmap · Splunk ✦' }, { c: 'info', t: 'Forensics : Autopsy · FTK Imager · StegoPEG' }, { c: 'res', t: '✦ Currently learning' }],
-  projects: () => [{ c: 'res', t: '[ REAL SECURITY PROJECTS ]' }, { c: 'info', t: '01. Encryption App       → AES/RSA cryptographic tool' }, { c: 'info', t: '    github.com/ShivKylash1020/encryption-app' }, { c: 'info', t: '02. Steganography Tool   → LSB encoding/detection' }, { c: 'info', t: '    github.com/ShivKylash1020/Steganography-Tool-v1.0.0' }, { c: 'info', t: '03. CyberGuard Password  → Entropy strength analyzer' }, { c: 'info', t: '    github.com/ShivKylash1020/cyberguard-password-analyzer' }],
-  scan: () => [{ c: 'res', t: '$ Initiating system scan...' }, { c: 'info', t: '[██████████] 100%  Scan complete' }, { c: 'res', t: '✔ Firewall       : Active — 14 rules' }, { c: 'res', t: '✔ SSL/TLS        : Grade A+' }, { c: 'res', t: '✔ Malware        : 0 signatures' }, { c: 'info', t: '⚠ Open CVEs      : 2 low-severity (monitor)' }, { c: 'res', t: 'Security Score   : 94 / 100' }],
-  social: () => [{ c: 'res', t: '[ SOCIAL & CONTACT ]' }, { c: 'info', t: '📧  ShivKylash d1020@gmail.com' }, { c: 'info', t: '🐙  github.com/ShivKylash1020' }, { c: 'info', t: '💼  linkedin.com/in/ShivKylash- -9593742a7' }, { c: 'info', t: '💬  wa.me/917623086306' }, { c: 'res', t: '👉  Open to internships & SOC Analyst roles' }],
-  contact: () => [{ c: 'res', t: '[ CONTACT INFORMATION ]' }, { c: 'info', t: 'Email:    ShivKylash d1020@gmail.com' }, { c: 'info', t: 'GitHub:   github.com/ShivKylash1020' }, { c: 'info', t: 'LinkedIn: linkedin.com/in/ShivKylash- -9593742a7' }, { c: 'info', t: 'WhatsApp: +91 76230 86306' }, { c: 'res', t: 'Status:   Open to internships & SOC Analyst roles' }],
+  whoami: () => [
+    { c: 'res', t: 'shiv@cyber:~$ whoami' },
+    { c: 'info', t: 'Name     : Shiv Kylash V' },
+    { c: 'info', t: 'Role     : Security Analyst' },
+    { c: 'info', t: 'Degree   : B.Tech Electronics & Computer Engg.' },
+    { c: 'info', t: 'School   : VIT Chennai · CGPA 8.96 · 2022–2026' },
+    { c: 'res', t: 'Status   : 🟢 Open to SOC Analyst roles' },
+  ],
+  about: () => [
+    { c: 'res', t: '[ SHIV KYLASH V — SECURITY PROFILE ]' },
+    { c: 'info', t: 'Phone:    +91 7550230026' },
+    { c: 'info', t: 'Email:    vshivkylash06@gmail.com' },
+    { c: 'info', t: 'GitHub:   github.com/Skytheguy-tech' },
+    { c: 'info', t: 'LinkedIn: linkedin.com/in/shiv-kylash-v' },
+    { c: 'info', t: 'TryHackMe: tryhackme.com/p/ShivKylashV' },
+    { c: 'res', t: 'Focus:    Threat Detection · SIEM · Incident Response' },
+  ],
+  skills: () => [
+    { c: 'res', t: '[ TECHNICAL SKILLS ]' },
+    { c: 'info', t: 'Languages : Python  SQL  C/C++  Java  Bash' },
+    { c: 'info', t: 'Security  : SIEM (Splunk) · IDS/IPS · MITRE ATT&CK' },
+    { c: 'info', t: 'Tools     : Wireshark · Metasploit · Burp Suite · Nmap' },
+    { c: 'res', t: '✦ CompTIA Security+ · Google Cybersecurity Professional' },
+  ],
+  projects: () => [
+    { c: 'res', t: '[ SECURITY PROJECTS ]' },
+    { c: 'info', t: '01. Quantum-Assisted Steganography' },
+    { c: 'info', t: '02. Blue Machine Pentest & Malware Analysis' },
+    { c: 'info', t: '03. Active Directory Attack Simulation' },
+    { c: 'info', t: '04. RSA Key Compromise & Cert Forgery' },
+    { c: 'res', t: 'github.com/Skytheguy-tech' },
+  ],
+  social: () => [
+    { c: 'res', t: '[ SOCIAL & CONTACT ]' },
+    { c: 'info', t: '📞  +91 7550230026' },
+    { c: 'info', t: '📧  vshivkylash06@gmail.com' },
+    { c: 'info', t: '🐙  github.com/Skytheguy-tech' },
+    { c: 'info', t: '💼  linkedin.com/in/shiv-kylash-v-738a32251' },
+    { c: 'info', t: '▲  tryhackme.com/p/ShivKylashV' },
+    { c: 'res', t: '👉  Open to SOC Analyst roles & internships' },
+  ],
+  contact: () => [
+    { c: 'res', t: '[ CONTACT INFORMATION ]' },
+    { c: 'info', t: 'Phone:    +91 7550230026' },
+    { c: 'info', t: 'Email:    vshivkylash06@gmail.com' },
+    { c: 'info', t: 'GitHub:   github.com/Skytheguy-tech' },
+    { c: 'info', t: 'LinkedIn: linkedin.com/in/shiv-kylash-v-738a32251' },
+    { c: 'res', t: 'Status:   Open to SOC Analyst roles' },
+  ],
 };
 
 const tOut = $('term-out'), tIn = $('ti');
@@ -287,32 +329,6 @@ function runCmd(cmd) {
 }
 tIn.addEventListener('keydown', e => { if (e.key === 'Enter') { runCmd(tIn.value); tIn.value = ''; } });
 window.runCmd = runCmd;
-
-/* ── SCAN SYSTEM ── */
-const STEPS = [
-  { l: 'Scanning open ports...', r: 'Port 22/80/443 — Status verified ✔', c: 'ok', d: 250 },
-  { l: 'Checking firewall rules...', r: 'Firewall: Active — 14 rules loaded ✔', c: 'ok', d: 550 },
-  { l: 'Analyzing DNS configuration...', r: 'DNS: Secure — DNSSEC enabled ✔', c: 'ok', d: 850 },
-  { l: 'Detecting malware signatures...', r: 'Malware: 0 signatures detected ✔', c: 'ok', d: 1150 },
-  { l: 'SSL/TLS certificate verification...', r: 'Certificate: Valid — Grade A+ ✔', c: 'ok', d: 1450 },
-  { l: 'CVE vulnerability assessment...', r: '⚠ 2 low-severity CVEs flagged — monitor', c: 'warn', d: 1750 },
-  { l: 'Password policy compliance...', r: 'Entropy: Adequate — Score: 88/100 ✔', c: 'ok', d: 2050 },
-  { l: 'Log integrity verification...', r: 'Logs: Untampered — Hash match ✔', c: 'ok', d: 2350 },
-  { l: 'Compiling security report...', r: '', c: 'done', d: 2650 },
-  { l: '', r: '══ SCAN COMPLETE — Security Score: 94/100 ✔ ══', c: 'done', d: 2850 },
-];
-function runScan() {
-  const btn = $('scan-btn'), sbw = $('sbw'), sbf = $('sbf'), sl = $('scan-log'), lb = $('slabel'), sp2 = $('spct');
-  btn.disabled = true; sbw.style.display = 'block'; sl.style.display = 'block';
-  sl.innerHTML = '<div class="sl" style="color:var(--nb)">$ Starting ShivKylash   Cyber Scanner v2.0...</div>';
-  let p2 = 0; const pi2 = setInterval(() => { p2 = Math.min(p2 + 1, 100); sbf.style.width = p2 + '%'; sp2.textContent = p2 + '%'; if (p2 >= 100) clearInterval(pi2); }, 27);
-  STEPS.forEach(({ l, r, c, d }) => {
-    if (l) setTimeout(() => { lb.textContent = l; const el = document.createElement('div'); el.className = 'sl'; el.textContent = '→ ' + l; sl.appendChild(el); sl.scrollTop = sl.scrollHeight; }, d);
-    if (r) setTimeout(() => { const el = document.createElement('div'); el.className = 'sl ' + c; el.textContent = '  ' + r; sl.appendChild(el); sl.scrollTop = sl.scrollHeight; }, d + 160);
-  });
-  setTimeout(() => { btn.disabled = false; btn.textContent = '▶ RUN AGAIN'; }, 3100);
-}
-window.runScan = runScan;
 
 /* ── CONTACT FORM ── */
 async function submitForm(e) {
