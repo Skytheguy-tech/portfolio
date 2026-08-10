@@ -17,7 +17,7 @@ function rafThrottle(fn) {
 
 /* ── LOADER ── */
 const LLINES = [
-  { t: '<span class="tp">$</span> sudo init ShivKylash cyber.com --secure', d: 0 },
+  { t: '<span class="tp">$</span> sudo init ShivKylash --secure', d: 0 },
   { t: '<span style="color:#555">[sudo] password: ••••••••</span>', d: 350 },
   { t: '<span style="color:var(--ng)">✓</span> Authentication passed. Welcome, ShivKylash.', d: 700 },
   { t: '<span class="tp">$</span> loading modules...', d: 1050 },
